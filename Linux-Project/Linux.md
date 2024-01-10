@@ -26,3 +26,5 @@ The **mv** command allows us move or rename files or directories
 ### Mkdir (**Make Directory**)
 The mkdir command allows us create one or multiple directories at once and set permissions for them.
 ![Screenshot below shows two directories created with the help of the mkdir command](Images/mkdir.png)
+The mkdir command allows us remove one or multiple directories at once and set permissions for them.
+![Screenshot below shows three directories removed with the help of the mkdir command and the -p command also used to remove all direcories and sub directories at once.](Images/rmdir.png)
