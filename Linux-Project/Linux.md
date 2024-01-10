@@ -14,4 +14,4 @@ The **ls** command allows us list the various files and directories within a sys
 ![Below screenshot shows the output from ls command](Images/Ls.png)
 ### Cat (**Concatenate**)
 The **cat** command allow us list, combine and write files to a final standard output.
-![Below screenshot shows the output from the cat command in a  file as well as two files being joined into another file]
+![Below screenshot shows the output from the cat command in a  file as well as two files being joined into another file](Images/Cat1.png)
