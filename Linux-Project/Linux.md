@@ -9,3 +9,6 @@ The **pwd** command allows us know the directory we are currently in at any give
 ### Cd (**Change Directory**)
 The **cd** command allows us switch to different directories
 ![Below screenshot shows the output from cd as well as cd .. and cd - which helps us move a direction up and to the previous directory respectively](Images/Cd.png)
+### ls (**List**)
+The **ls** command allows us list the various files and directories within a system.
+![Below screenshot shows the out from ls command]
