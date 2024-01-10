@@ -20,3 +20,6 @@ The **cp** command allows us copy files or directories and their content
 ![Below image shows a .txt file copied to a different directory with the help of the cp command](Images/Cp_command.png)
 The below screenshot highlights **cp** command being used to copy a directory into another directory
 ![Below image shows a directory copied to a different directory with the help of the cp command](Images/CP_move_Dir.png)
+### Mv (**Move**)
+The **mv** command allows us move or rename files or directories
+![Below screenshot shows moved from one directory to another](Images/MV.png)
