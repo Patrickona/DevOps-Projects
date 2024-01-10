@@ -1,4 +1,4 @@
-# Linux commands
+# Linux OS
 ## Basic File Manipulation Commands
 ### Sudo
 The **Sudo** command permits a user perform task that require administration/root user access
