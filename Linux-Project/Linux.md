@@ -28,4 +28,7 @@ The **mkdir** command allows us create one or multiple directories at once and s
 ![Screenshot below shows two directories created with the help of the mkdir command](Images/mkdir.png)
 ### rmdir (**Remove Directory**)
 The **rmdir** command allows us remove one or multiple directories at once and set permissions for them.
+### rm (**Remove**)
+The **rm** commands allows us delete files within a directory.
+![Below screenshot shows a .txt file being deleted from a directory](Images/Rm.png)
 ![Screenshot below shows three directories removed with the help of the mkdir command and the -p command also used to remove all direcories and sub directories at once.](Images/rmdir.png)
