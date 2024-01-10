@@ -40,4 +40,4 @@ The **find** command allows us search for files within a specific directory
 ![Below screenshot shows us the find command being used to search for a file](Images/Find.png)
 ### DF
 The **df** command allows show the system disk space usage, usually shown in percentage(%) and Kilobyte (KB)
-![Below screenshot shows the df command used to view disk space.]
+![Below screenshot shows the df command used to view disk space.](Images/DF.png)
