@@ -24,7 +24,8 @@ The below screenshot highlights **cp** command being used to copy a directory in
 The **mv** command allows us move or rename files or directories
 ![Below screenshot shows moved from one directory to another](Images/MV.png)
 ### Mkdir (**Make Directory**)
-The mkdir command allows us create one or multiple directories at once and set permissions for them.
+The **mkdir** command allows us create one or multiple directories at once and set permissions for them.
 ![Screenshot below shows two directories created with the help of the mkdir command](Images/mkdir.png)
-The mkdir command allows us remove one or multiple directories at once and set permissions for them.
+### rmdir (**Remove Directory**)
+The **rmdir** command allows us remove one or multiple directories at once and set permissions for them.
 ![Screenshot below shows three directories removed with the help of the mkdir command and the -p command also used to remove all direcories and sub directories at once.](Images/rmdir.png)
