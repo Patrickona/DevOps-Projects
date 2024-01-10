@@ -18,3 +18,5 @@ The **cat** command allow us list, combine and write files to a final standard o
 ### Cp (**Copy**)
 The **cp** command allows us copy files or directories and their content
 ![Below image shows a .txt file copied to a different directory with the help of the cp command](Images/Cp_command.png)
+The below screenshot highlights **cp** command being used to copy a directory into another directory
+![Below image shows a directory copied to a different directory with the help of the cp command](Images/CP_move_Dir.png)
