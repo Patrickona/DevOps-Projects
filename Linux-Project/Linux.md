@@ -46,4 +46,4 @@ The **du** command allows us show how much space a file or directory takes up.
 ![Below screenshot shows the du command used to show space occupied by the directory.](Images/DU.png)
 ### Head
 The **head** commands allows us view the first ten 10 lines of a text. syntax like the -n (no of lines) show specific lines desired to be seen.
-![Below screenshot shows the head command -n]()
+![Below screenshot shows the head -n 5 command used on a .txt file to restrict the lines to be views](Images/Find.png)
