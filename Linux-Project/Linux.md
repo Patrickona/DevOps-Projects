@@ -8,4 +8,4 @@ The **pwd** command allows us know the directory we are currently in at any give
 ![Below screenshot shows the output from running the pwd command as well as logical and physical print of the directory](Images/PWD.png)
 ### Cd
 The **cd** command allows us switch to different directories
-![Below screenshot shows the output from cd as well as cd.. and cd - which helps us move a direction up and to the previous directory respectively]
+![Below screenshot shows the output from cd as well as cd .. and cd - which helps us move a direction up and to the previous directory respectively](Images/Cd.png)
