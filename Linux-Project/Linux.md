@@ -37,4 +37,4 @@ The **touch** command allows us create and empty file
 ![Below screenshot shows a file being created with the use of the touch command](Images/Touch.png)
 ### Find (**Find**)
 The **find** command allows us search for files within a specific directory
-![Below screenshot shows us the find command being used to search for a file ]
+![Below screenshot shows us the find command being used to search for a file](Images/Find.png)
