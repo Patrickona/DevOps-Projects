@@ -23,3 +23,6 @@ The below screenshot highlights **cp** command being used to copy a directory in
 ### Mv (**Move**)
 The **mv** command allows us move or rename files or directories
 ![Below screenshot shows moved from one directory to another](Images/MV.png)
+### Mkdir (**Make Directory**)
+The mkdir command allows us create one or multiple directories at once and set permissions for them.
+![Screenshot below shows two directories created with the help of the mkdir command](Images/mkdir.png)
