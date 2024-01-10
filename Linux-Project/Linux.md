@@ -33,4 +33,5 @@ The **rmdir** command allows us remove one or multiple directories at once and s
 The **rm** commands allows us delete files within a directory.
 ![Below screenshot shows a .txt file being deleted from a directory](Images/Rm.png)
 ### touch (**Touch**)
-The **touch** command allows us create and emoty file
+The **touch** command allows us create and empty file
+![Below screenshot shows a file being created with the use of the touch command](Images/Touch.png)
