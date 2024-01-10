@@ -45,5 +45,8 @@ The **df** command allows us show the system disk space usage, usually shown in 
 The **du** command allows us show how much space a file or directory takes up.
 ![Below screenshot shows the du command used to show space occupied by the directory.](Images/DU.png)
 ### Head
-The **head** commands allows us view the first ten 10 lines of a text. syntax like the -n (no of lines) show specific lines desired to be seen.
+The **head** command allows us view the first ten 10 lines of a text. syntax like the -n (no of lines) show specific lines desired to be seen.
 ![Below screenshot shows the head -n 5 command used on a .txt file to restrict the lines to be views](Images/Find.png)
+### Tail
+The **tail** command allows us view the last ten 10 lines of a text. syntax like the -n (no of lines) show specific lines desired to be seen.
+![Below screenshot shows the head -n 3 command used on a .txt file to restrict the lines to be views](Images/Tail.png)
