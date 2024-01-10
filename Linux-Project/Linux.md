@@ -11,4 +11,7 @@ The **cd** command allows us switch to different directories
 ![Below screenshot shows the output from cd as well as cd .. and cd - which helps us move a direction up and to the previous directory respectively](Images/Cd.png)
 ### ls (**List**)
 The **ls** command allows us list the various files and directories within a system.
-![Below screenshot shows the out from ls command](Images/Ls.png)
+![Below screenshot shows the output from ls command](Images/Ls.png)
+### Cat (**Concatenate**)
+The **cat** command allow us list, combine and write files to a final standard output.
+![Below screenshot shows the output from the cat command in a  file as well as two files being joined into another file]
