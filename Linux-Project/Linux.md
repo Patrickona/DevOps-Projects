@@ -43,4 +43,4 @@ The **df** command allows us show the system disk space usage, usually shown in 
 ![Below screenshot shows the df command used to view disk space.](Images/DF.png)
 ### DU
 The **du** command allows us show how much space a file or directory takes up
-![Below screenshot shows the du command used to show space occupied by the directory.]
+![Below screenshot shows the du command used to show space occupied by the directory.](Images/DU.png)
