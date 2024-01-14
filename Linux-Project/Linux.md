@@ -50,3 +50,6 @@ The **head** command allows us view the first ten 10 lines of a text. syntax lik
 ### Tail
 The **tail** command allows us view the last ten 10 lines of a text. syntax like the -n (no of lines) show specific lines desired to be seen.
 ![Below screenshot shows the head -n 3 command used on a .txt file to restrict the lines to be views](Images/Tail.png)
+### Ping
+The **ping** command allows us test reachability of servers or a network
+![Below screenshot shows ping test done towards google.com server]
