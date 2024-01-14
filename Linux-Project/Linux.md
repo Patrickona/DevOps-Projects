@@ -64,7 +64,7 @@ The **top** command allows us display all running processes and a dynamic real t
 ![The below shows the top command being executed](Images/top.png)
 ### History
 The **history** commands displays a list of upto 500 previusly used commands allowing us to easily reuse them
-![The below screenshot serves as a reference during use](Images/history)
+![The below screenshot serves as a reference during use](Images/history.png)
 ### Man
 The **man** command provides a manual of any commands we can run in a terminal inculding name, descriptions and options
 ![Below screehsot shows reference of the man command executed](Images/man.png)
