@@ -52,4 +52,4 @@ The **tail** command allows us view the last ten 10 lines of a text. syntax like
 ![Below screenshot shows the head -n 3 command used on a .txt file to restrict the lines to be views](Images/Tail.png)
 ### Ping
 The **ping** command allows us test reachability of servers or a network
-![Below screenshot shows ping test done towards google.com server]
+![Below screenshot shows ping test done towards google.com server](Images/ping.png)
