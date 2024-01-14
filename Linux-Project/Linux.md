@@ -64,10 +64,10 @@ The **top** command allows us display all running processes and a dynamic real t
 ![The below shows the top command being executed](Images/top.png)
 ### History
 The **history** commands displays a list of upto 500 previusly used commands allowing us to easily reuse them
-![The below screenshot serves as a reference during use](Images/)
+![The below screenshot serves as a reference during use](Images/history)
 ### Man
 The **man** command provides a manual of any commands we can run in a terminal inculding name, descriptions and options
-![Below screehsot shows reference of the man command executed](Images/man ls.png)
+![Below screehsot shows reference of the man command executed](Images/man.png)
 ### Hostname
 The **hostname** command is used to know the system hostname
 ![Below screenshot shows the hostname command run as well and -i syntax used to check ip address details](Images/hostname.png)
