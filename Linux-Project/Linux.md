@@ -55,4 +55,4 @@ The **ping** command allows us test reachability of servers or a network
 ![Below screenshot shows ping test done towards google.com server](Images/ping.png)
 ### Wget
 The **wget** command allows us retrieve information from the internet using protocols like http, https etc
-![Below screenshot shows wget in use retrieving information from a website with the help of https]
+![Below screenshot shows wget in use retrieving information from a website with the help of https](Images/wget.png)
