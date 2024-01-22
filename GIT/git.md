@@ -24,3 +24,6 @@ The **git remote add** helps us merge our remote repository with our local repos
 # Git Push #
 The **git push** uploads local repository to remote repository
 ![Below screenshot as reference](Image/gitpush.png)
+# Git Clone #
+The **git clone** helps us copy our remote repository to our local machine. This is helpful when we want to make improvements to a source code. This is helpful for teams to work on a project collaboratively even when they are not in same location.
+![Below screenshot serves as a reference]
