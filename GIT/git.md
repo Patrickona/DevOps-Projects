@@ -18,3 +18,9 @@ The **git checkout** command enables us move between various branches
 # Git Branch -d #
 The **git branch -d** command enables us delete a branch
 ![See below screenshot for reference](Image/gitdelete.png)
+# Git remote add #
+The **git remote add** helps us merge our remote repository with our local repository
+![See below screenshot as reference](Image/gitremoteadd.png)
+# Git Push #
+The **git push** uploads local repository to remote repository
+![Below screenshot as reference](Image/gitpush.png)
