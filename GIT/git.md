@@ -15,3 +15,6 @@ The **git branch** command list the branches in our local repository
 # Git Checkout #
 The **git checkout** command enables us move between various branches
 ![See below screenshot for reference](Image/gitcheckout.jpg)
+# Git Branch -d #
+The **git branch -d** command enables us delete a branch
+![See below screenshot for reference]
