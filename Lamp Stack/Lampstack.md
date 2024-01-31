@@ -76,7 +76,7 @@ $ sudo mysql -p
 
 ![Below reference](Images/sql_test.png)
 
-Installing PHP
+### Installing PHP ###
 
 To setup PHP we run the below command
 
@@ -89,3 +89,36 @@ To check version, run the command
 $ php -v
 
 ![Reference](Images/php_version)
+
+### Setting up a Virtual Host for Apache ###
+
+To create a virtual for our website, we first create a directory "projectlamp" using the below command
+
+$ sudo mkdir /var/www/projectlamp
+
+Then we change ownership to our current environment using the below command
+
+$ sudo chown -R $USER:$USER /var/www/projectlamp
+
+![Below screenshot reference](Images/dir.png)
+
+Then we create and open a new configiration file in Apache's **sites available** directory using the below command
+
+$ sudo vi /etc/apache2/sites-available/projectlamp.conf
+
+This will bring us into a blank file, paste the below after hitting the ***i*** to insert and paste the test
+
+<VirtualHost *:80>
+    ServerName projectlamp
+    ServerAlias www.projectlamp 
+    ServerAdmin webmaster@localhost
+    DocumentRoot /var/www/projectlamp
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+
+To save and close the file:
+- Hit the ***esc***
+- Type **:**
+- Type ***wq*** to write and quit
+- Hit ***enter** to save the file
