@@ -19,4 +19,14 @@ Then we open our terminal, in this case we are using **GIT BASH**, enter into th
 ### Apachec2 Web Server Setup ###
 
 In our virtual server, we run the below command to install **apache2** 
-![Reference to install apache2](Images
+
+sudo apt install apache2
+
+![Reference to install apache2](Images/apache2.png)
+
+To verify **apache2** is now running as a service, use the below command. 
+
+sudo  systemctl status apache2
+>[!Note]You should have a green notification show active (running)
+
+![Below screenshot as reference](Images/apache2_install.png)
