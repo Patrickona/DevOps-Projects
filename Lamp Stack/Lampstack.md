@@ -114,10 +114,46 @@ To save and close the file:
 - Hit the ***esc***
 - Type **:**
 - Type ***wq*** to write and quit
-- Hit ***enter** to save the file
+- Hit ***enter*** to save the file
 
 To list the new file in the **sites-available** directory, we run the below command
 
 $ sudo ls /etc/apache2/sites-available
 
 ![Below screenshot reference](Images/ls_apache.png)
+
+By default setting, index.html file will always precedence over an index.php file, to change this behavior, we have to change order in which the file is listed placing the ***.php*** file before the ***.html*** file. We use the below command to achieve this
+
+$ sudo vim /etc/apache2/mods-enabled/dir.conf
+
+![See below reference](Images/index.png)
+
+To enable the new virtual host, run the below
+
+$ sudo a2ensite projectlamp
+
+Tp disable the default website that comes with apache, run the below
+
+$ sudo a2dissite 000-default
+
+To make sure our configuration files does not contain syntax error:
+
+$ sudo apache2ctl configtest
+
+To reload the apache webserver
+
+$ sudo systemctl reload apache2
+
+We create a file in /var/www/projectlamp named “index.html”
+
+$ touch /var/www/projectlamp/index.html
+
+We then redirect these data into the file:
+
+$ echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+
+![See below reference](Images/apache_test.png)
+
+Then we refresh our browser to see the echo message sent
+
+![See below reference](Images/php_test)
