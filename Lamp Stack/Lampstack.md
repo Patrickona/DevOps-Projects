@@ -20,7 +20,7 @@ Then we open our terminal, enter into the directory we have our **.PEM** file sa
 
 In our virtual server, we run the below command to install **apache2** 
 
-'$ sudo apt install apache2'
+`$ sudo apt install apache2`
 
 ![Reference to install apache2](Images/apache2.png)
 
