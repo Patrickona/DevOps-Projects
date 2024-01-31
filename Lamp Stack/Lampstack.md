@@ -27,6 +27,7 @@ sudo apt install apache2
 To verify **apache2** is now running as a service, use the below command. 
 
 sudo  systemctl status apache2
->[!Note]You should have a green notification show active (running)
+>[!Note]
+>You should have a green notification show active (running)
 
 ![Below screenshot as reference](Images/apache2_install.png)
