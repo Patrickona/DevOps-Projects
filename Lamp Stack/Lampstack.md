@@ -88,7 +88,7 @@ To check version, run the command
 
 $ php -v
 
-![Reference](Images/php_version)
+![Reference](Images/php_version.png)
 
 ### Setting up a Virtual Host for Apache ###
 
@@ -108,17 +108,16 @@ $ sudo vi /etc/apache2/sites-available/projectlamp.conf
 
 This will bring us into a blank file, paste the below after hitting the ***i*** to insert and paste the test
 
-<VirtualHost *:80>
-    ServerName projectlamp
-    ServerAlias www.projectlamp 
-    ServerAdmin webmaster@localhost
-    DocumentRoot /var/www/projectlamp
-    ErrorLog ${APACHE_LOG_DIR}/error.log
-    CustomLog ${APACHE_LOG_DIR}/access.log combined
-</VirtualHost>
+![Reference scrrenshot below](Images/php_apache.png)
 
 To save and close the file:
 - Hit the ***esc***
 - Type **:**
 - Type ***wq*** to write and quit
 - Hit ***enter** to save the file
+
+To list the new file in the **sites-available** directory, we run the below command
+
+$ sudo ls /etc/apache2/sites-available
+
+![Below screenshot reference](Images/ls_apache.png)
