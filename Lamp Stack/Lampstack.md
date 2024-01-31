@@ -4,7 +4,7 @@ To do this, we need the following
 - An account on AWS.
 - We create our virtual machine (EC2 instance). We will be using **Ubuntu server 20.04 LTS** from Amazon Machine Image (free tier)
 
-Steps to create a virtual machine (EC2 instance), Click here [!Contributing guide](Creating_Server_on_AWS.md)
+Steps to create a virtual machine (EC2 instance), Click here [!Contributing guide](Lamp Stack/Creating_Server_on_AWS.md)
 
 This launches us into our instance as show in below screenshot
 
@@ -133,7 +133,7 @@ To enable the new virtual host, run the below
 
 `$ sudo a2ensite projectlamp`
 
-Tp disable the default website that comes with apache, run the below
+To disable the default website that comes with apache, run the below
 
 `$ sudo a2dissite 000-default`
 
