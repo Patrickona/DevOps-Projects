@@ -1,4 +1,4 @@
-### Creating Virtual Linux Server on AWS ###
+### Creating Virtual Linux Server in the Cloud using AWS ###
 This documentation shows the steps taken to create a Linux virtual server on AWS 
 # Creating an EC2 instance #
 - Create a security group: This is a firewall, setting the rules on the inbound/outband traffic for our instance. In this case we have allowed **all traffic** for both inbound and outband traffic
