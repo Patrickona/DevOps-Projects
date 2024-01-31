@@ -1,4 +1,4 @@
-* LAMP STACK IMPLEMENTATION *
+*** LAMP STACK IMPLEMENTATION ***
 ** Setting up LAMP STACK using EC2 instance.**
 To do this, we need the following 
 * An account on AWS.
