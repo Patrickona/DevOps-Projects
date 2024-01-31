@@ -16,7 +16,7 @@ Then we open our terminal, enter into the directory we have our **.PEM** file sa
 
 ![Reference screenshot for ssh into virtual server](Images/ssh_EC2_instance.png)
 
-### Apachec2 Web Server Setup ###
+### Apache2 Web Server Setup ###
 
 In our virtual server, we run the below command to install **apache2** 
 
