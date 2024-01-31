@@ -43,11 +43,11 @@ Once that is done, we copy the url (use the public IP from our instance) and pas
 
 ### My SQL Database Server setup ###
 
-in our terminal, we run the below command to install **mysql server**
+In our terminal, we run the below command to install **mysql server**
 
 `$ sudo apt install mysql-server`
 
-when prompted, confirm installation by typing Y and the Enter
+when prompted, confirm installation by typing `Y` and the `Enter`
 
 ![Below screenshot for reference](Images/sqlserver_install.png)
 
