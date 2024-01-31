@@ -20,7 +20,7 @@ Then we open our terminal, enter into the directory we have our **.PEM** file sa
 
 In our virtual server, we run the below command to install **apache2** 
 
-$ sudo apt install apache2
+'$ sudo apt install apache2'
 
 ![Reference to install apache2](Images/apache2.png)
 
@@ -174,3 +174,4 @@ To remove the ***.php*** file created, after our test we use the below
 
 $ sudo rm /var/www/projectlamp/index.php
 
+## We have successfully deployed a LAMP STACK website in the cloud ## 
