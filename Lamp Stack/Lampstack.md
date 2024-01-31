@@ -156,4 +156,4 @@ $ echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-d
 
 Then we refresh our browser to see the echo message sent
 
-![See below reference](Images/php_test)
+![See below reference](Images/php_test.png)
