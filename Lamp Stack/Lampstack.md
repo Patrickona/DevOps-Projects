@@ -103,11 +103,11 @@ Then we change ownership to our current environment using the below command
 
 ![Below screenshot reference](Images/dir.png)
 
-Then we create and open a new configiration file in Apache's **sites available** directory using the below command
+Then we create and open a new configuration file in Apache's **sites available** directory using the below command
 
 `$ sudo vi /etc/apache2/sites-available/projectlamp.conf`
 
-This will bring us into a blank file, paste the below after hitting the ***i*** to insert and paste the test
+This will bring us into a blank file, paste the below after hitting the ***i*** to insert and paste the text
 
 ![Reference scrrenshot below](Images/php_apache.png)
 
