@@ -26,7 +26,8 @@ In our virtual server, we run the below command to install **apache2**
 
 To verify **apache2** is now running as a service, use the below command. 
 
-$  sudo  systemctl status apache2
+`$ sudo  systemctl status apache2`
+
 >[!Note]
 >You should have a green notification show active (running)
 
@@ -44,7 +45,7 @@ Once that is done, we copy the url (use the public IP from our instance) and pas
 
 in our terminal, we run the below command to install **mysql server**
 
-$ sudo apt install mysql-server
+`$ sudo apt install mysql-server`
 
 when prompted, confirm installation by typing Y and the Enter
 
@@ -52,15 +53,15 @@ when prompted, confirm installation by typing Y and the Enter
 
 After installation, log into the server using the command
 
-$ sudo mysql
+`$ sudo mysql`
 
 This will connect to the MYSQL server as the administrative database user **root** which is inferred by the use of sudo. The below output will be seen.
 
 ![Below reference](Images/sql_login.png)
 
-To set password as "PassWord.1" for the **root** user, we run the below command
+To set password as `"PassWord.1"` for the **root** user, we run the below command
 
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1'
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1'`
 
 ![Below screenshot as reference](Images/mysql_password.png)
 
@@ -72,7 +73,7 @@ Then we "exit" mysql and run the below command to start the interactive script
 
 Log into mysql server with new password using the below command.
 
-$ sudo mysql -p
+`$ sudo mysql -p`
 
 ![Below reference](Images/sql_test.png)
 
@@ -80,13 +81,13 @@ $ sudo mysql -p
 
 To setup PHP we run the below command
 
-$ sudo apt install php libapache2-mod-php php-mysql
+`$ sudo apt install php libapache2-mod-php php-mysql`
 
 ![Reference](Images/php_install.png)
 
 To check version, run the command
 
-$ php -v
+`$ php -v`
 
 ![Reference](Images/php_version.png)
 
@@ -94,17 +95,17 @@ $ php -v
 
 To create a virtual for our website, we first create a directory "projectlamp" using the below command
 
-$ sudo mkdir /var/www/projectlamp
+`$ sudo mkdir /var/www/projectlamp`
 
 Then we change ownership to our current environment using the below command
 
-$ sudo chown -R $USER:$USER /var/www/projectlamp
+`$ sudo chown -R $USER:$USER /var/www/projectlamp`
 
 ![Below screenshot reference](Images/dir.png)
 
 Then we create and open a new configiration file in Apache's **sites available** directory using the below command
 
-$ sudo vi /etc/apache2/sites-available/projectlamp.conf
+`$ sudo vi /etc/apache2/sites-available/projectlamp.conf`
 
 This will bring us into a blank file, paste the below after hitting the ***i*** to insert and paste the test
 
@@ -118,39 +119,39 @@ To save and close the file:
 
 To list the new file in the **sites-available** directory, we run the below command
 
-$ sudo ls /etc/apache2/sites-available
+`$ sudo ls /etc/apache2/sites-available`
 
 ![Below screenshot reference](Images/ls_apache.png)
 
 By default setting, index.html file will always precedence over an index.php file, to change this behavior, we have to change order in which the file is listed placing the ***.php*** file before the ***.html*** file. We use the below command to achieve this
 
-$ sudo vim /etc/apache2/mods-enabled/dir.conf
+`$ sudo vim /etc/apache2/mods-enabled/dir.conf`
 
 ![See below reference](Images/index.png)
 
 To enable the new virtual host, run the below
 
-$ sudo a2ensite projectlamp
+`$ sudo a2ensite projectlamp`
 
 Tp disable the default website that comes with apache, run the below
 
-$ sudo a2dissite 000-default
+`$ sudo a2dissite 000-default`
 
 To make sure our configuration files does not contain syntax error:
 
-$ sudo apache2ctl configtest
+`$ sudo apache2ctl configtest`
 
 To reload the apache webserver
 
-$ sudo systemctl reload apache2
+`$ sudo systemctl reload apache2`
 
 We create a file in /var/www/projectlamp named “index.html”
 
-$ touch /var/www/projectlamp/index.html
+`$ touch /var/www/projectlamp/index.html`
 
 We then redirect these data into the file:
 
-$ echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html
+`$ echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-data/public-hostname) 'with public IP' $(curl -s http://169.254.169.254/latest/meta-data/public-ipv4) > /var/www/projectlamp/index.html`
 
 ![See below reference](Images/apache_test.png)
 
@@ -160,9 +161,9 @@ Then we refresh our browser to see the echo message sent
 
 To test our Apache is able to handle ***.php*** scripts we create another file in the **projectlamp** folder and call it **index.php** using the below command
 
-$ touch /var/www/projectlamp/index.pnp
+`$ touch /var/www/projectlamp/index.pnp`
 
-$ vim /var/www/projectlamp/index.php
+`$ vim /var/www/projectlamp/index.php`
 
 A blank file will be opened,we modify with the below information, save and refresh our browser
 
@@ -172,6 +173,6 @@ A blank file will be opened,we modify with the below information, save and refre
 
 To remove the ***.php*** file created, after our test we use the below 
 
-$ sudo rm /var/www/projectlamp/index.php
+`$ sudo rm /var/www/projectlamp/index.php`
 
 ## We have successfully deployed a LAMP STACK website in the cloud ## 
