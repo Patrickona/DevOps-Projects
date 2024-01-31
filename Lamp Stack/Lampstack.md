@@ -157,3 +157,20 @@ $ echo 'Hello LAMP from hostname' $(curl -s http://169.254.169.254/latest/meta-d
 Then we refresh our browser to see the echo message sent
 
 ![See below reference](Images/php_test.png)
+
+To test our Apache is able to handle ***.php*** scripts we create another file in the **projectlamp** folder and call it **index.php** using the below command
+
+$ touch /var/www/projectlamp/index.pnp
+
+$ vim /var/www/projectlamp/index.php
+
+A blank file will be opened,we modify with the below information, save and refresh our browser
+
+![Screenshot for reference](Images/phpinfo.png)
+
+![Screenshot for reference](Images/php_html.png)
+
+To remove the ***.php*** file created, after our test we use the below 
+
+$ sudo rm /var/www/projectlamp/index.php
+
