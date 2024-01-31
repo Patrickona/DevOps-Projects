@@ -20,13 +20,13 @@ Then we open our terminal, enter into the directory we have our **.PEM** file sa
 
 In our virtual server, we run the below command to install **apache2** 
 
-sudo apt install apache2
+$ sudo apt install apache2
 
 ![Reference to install apache2](Images/apache2.png)
 
 To verify **apache2** is now running as a service, use the below command. 
 
-sudo  systemctl status apache2
+$  sudo  systemctl status apache2
 >[!Note]
 >You should have a green notification show active (running)
 
@@ -44,7 +44,7 @@ Once that is done, we copy the url (use the public IP from our instance) and pas
 
 in our terminal, we run the below command to install **mysql server**
 
-sudo apt install mysql-server
+$ sudo apt install mysql-server
 
 when prompted, confirm installation by typing Y and the Enter
 
@@ -52,7 +52,7 @@ when prompted, confirm installation by typing Y and the Enter
 
 After installation, log into the server using the command
 
-sudo mysql
+$ sudo mysql
 
 This will connect to the MYSQL server as the administrative database user **root** which is inferred by the use of sudo. The below output will be seen.
 
@@ -70,8 +70,22 @@ Then we "exit" mysql and run the below command to start the interactive script
 
 ![Below reference](Images/sql_interactive2.png)
 
-Log into mysql server using the below command.
+Log into mysql server with new password using the below command.
 
-sudo mysql -p
+$ sudo mysql -p
 
 ![Below reference](Images/sql_test.png)
+
+Installing PHP
+
+To setup PHP we run the below command
+
+$ sudo apt install php libapache2-mod-php php-mysql
+
+![Reference](Images/php_install.png)
+
+To check version, run the command
+
+$ php -v
+
+![Reference](Images/php_version)
