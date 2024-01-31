@@ -39,3 +39,20 @@ Once that is done, we copy the url (use the public IP from our instance) and pas
 ![Reference to get public IP for instance](Images/apache_ec2.png)
 
 ![Reference of apache2 http reachable](Images/apache_html.png)
+
+### My SQL Database Server setup ###
+
+in our terminal, we run the below command to install **mysql server**
+
+sudo apt install mysql-server
+when prompted, confirm installation by typing Y and the Enter
+
+![Below screenshot for reference]
+
+After installation, log into the server using the command
+
+sudo mysql
+
+This will connect to the MYSQL server as the administrative database user **root** which is inferred by the use of sudo. The below output will be seen.
+
+![Below reference]
