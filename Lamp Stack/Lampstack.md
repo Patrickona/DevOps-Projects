@@ -47,7 +47,7 @@ in our terminal, we run the below command to install **mysql server**
 sudo apt install mysql-server
 when prompted, confirm installation by typing Y and the Enter
 
-![Below screenshot for reference]
+![Below screenshot for reference](Images/sqlserver_install.png)
 
 After installation, log into the server using the command
 
@@ -55,4 +55,4 @@ sudo mysql
 
 This will connect to the MYSQL server as the administrative database user **root** which is inferred by the use of sudo. The below output will be seen.
 
-![Below reference]
+![Below reference](Images/sql_login.png)
