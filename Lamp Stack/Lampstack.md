@@ -36,6 +36,6 @@ Once that is done, we copy the url (use the public IP from our instance) and pas
 >[!Note]
 >You should be able to launch the public ip on any web browser.
 
-![Reference to get public IP for instance]
+![Reference to get public IP for instance](Images/apache_ec2.png)
 
-![Reference of apache2 http reachable]
+![Reference of apache2 http reachable](Images/apache_html.png)
