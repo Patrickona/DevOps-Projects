@@ -31,3 +31,11 @@ sudo  systemctl status apache2
 >You should have a green notification show active (running)
 
 ![Below screenshot as reference](Images/apache2_install.png)
+
+Once that is done, we copy the url (use the public IP from our instance) and paste on our browser to ensure our apache server is working. 
+>[!Note]
+>You should be able to launch the public ip on any web browser.
+
+![Reference to get public IP for instance]
+
+![Reference of apache2 http reachable]
