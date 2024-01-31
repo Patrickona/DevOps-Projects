@@ -15,3 +15,8 @@ Then we open our terminal, in this case we are using **GIT BASH**, enter into th
 ![Reference screenshot for location of pem file and ssh into server](Images/PEM_key.png)
 
 ![Reference screenshot for ssh into virtual server](Images/ssh_EC2_instance.png)
+
+### Apachec2 Web Server Setup ###
+
+In our virtual server, we run the below command to install **apache2** 
+![Reference to install apache2](Images
