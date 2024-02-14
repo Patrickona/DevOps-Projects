@@ -85,8 +85,9 @@ Open a new configuration file in Nginx **sites-available** using our preferred-l
 
 `$ sudo nano /etc/nginx/sites-available/projectLEMP`
 
-`#/etc/nginx/sites-available/projectLEMP
-server {
+`#/etc/nginx/sites-available/projectLEMP`
+
+`server {
     listen 80;
     server_name projectLEMP www.projectLEMP;
     root /var/www/projectLEMP;
