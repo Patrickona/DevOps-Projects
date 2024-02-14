@@ -156,4 +156,4 @@ phpinfo();`
 
 We the refresh our browser adding the `/info.php` to our *URL*. Below result is what we should see
 
-![Below for reference](Images/infor_PHP.png)
+![Below for reference](Images/info_PHP.png)
