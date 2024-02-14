@@ -184,14 +184,7 @@ Once permissions has been set, we exit the database and run the below command to
 
 In the MySQL console, run the below command to view database. You will get the below output
 
-`Output
-+--------------------+
-| Database           |
-+--------------------+
-| example_database   |
-| information_schema |
-+--------------------+
-2 rows in set (0.000 sec)`
+![](Images/database.png)
 
 Next, we create a table names todo_list in our MySQL console using the below
 
