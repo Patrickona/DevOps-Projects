@@ -7,5 +7,7 @@ To do this, we need the following
 Steps to create a virtual machine (EC2 instance), Click here [(https://github.com/Patrickona/DevOps-Projects/blob/main/Lamp%20Stack/Creating%20_Server_on_AWS.md)](./Creating_Server_on_AWS)
 
 This launches us into our instance as show in below screenshot
-![Screenshot below of our instance](Images/IP_instance.png)
 
+![Screenshot below of our instance](Images/EC2_instance.png)
+
+Then we open our terminal, enter into the directory we have our **.PEM** file saved and **ssh** into our virtual server
