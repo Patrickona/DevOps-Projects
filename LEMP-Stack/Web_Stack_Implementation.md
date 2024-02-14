@@ -157,3 +157,56 @@ phpinfo();`
 We the refresh our browser adding the `/info.php` to our *URL*. Below result is what we should see
 
 ![Below for reference](Images/info_PHP.png)
+
+### Retrieving Data from MySQL database with PHP ###
+
+First, we connect to our sql server using the below command and then enter our password
+
+sudo mysql -p
+
+To create database, run the below command in the mysql console
+
+mysql> CREATE DATABASE `example_database`;
+
+We create a new user and grant full priviledge rights. We use the below commands to set that up:
+
+The following creates the user using mysql_native_password as authentication method
+
+mysql>  CREATE USER 'example_user'@'%' IDENTIFIED WITH mysql_native_password BY 'PassWord.1';
+
+To give him permission, run the below 
+
+mysql> GRANT ALL ON example_database.* TO 'example_user'@'%';
+
+Once permissions has been set, we exit the database and run the below command to log in as the newly defined user
+
+$ mysql -u example_user -p
+
+In the MySQL console, run the below command to view database. You will get the below output
+
+Output
++--------------------+
+| Database           |
++--------------------+
+| example_database   |
+| information_schema |
++--------------------+
+2 rows in set (0.000 sec)
+
+Next, we create a table names todo_list in our MySQL console using the below
+
+CREATE TABLE example_database.todo_list (item_id INT AUTO_INCREMENT,content VARCHAR(255),PRIMARY KEY(item_id));
+
+Insert a few rows of tables using the below command
+
+mysql> INSERT INTO example_database.todo_list (content) VALUES ("My first important item");
+
+To confirm data was successfully saved, run the below command, you should see an output
+
+mysql>  SELECT * FROM example_database.todo_list;
+
+![Below screenshot for reference](Images/sql_table.png)
+
+Also see below as reference for creating rows in our table.
+
+![](Images/sql.png)
