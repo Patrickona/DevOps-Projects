@@ -63,6 +63,6 @@ Log into mysql server with new password using the below command.
 
 `$ sudo mysql -p`
 
-![Below reference](Images/sql_test.png)
+![Below reference](Images/mysql_test.png)
 
  
