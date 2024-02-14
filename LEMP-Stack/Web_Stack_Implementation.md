@@ -143,3 +143,17 @@ Our new website is now active but the web root /var/www/projectLEMP directory is
 Now refresh our browser with our same public IP address
 
 ![Below screenshot for reference](Images/PNP_browser_test.png)
+
+### Testing PHP with Nginx ###
+
+To test Nginx can handle `.php` files of to our PHP processor, we run the following:
+
+- First we create a test PHP file using the command `$ nano /var/www/projectLEMP/info.php `
+- Then we paste the below in the file
+
+`<?php
+phpinfo();`
+
+We the refresh our browser adding the `/info.php` to our *URL*. Below result is what we should see
+
+![Below for reference](Images/infor_PHP.png)
