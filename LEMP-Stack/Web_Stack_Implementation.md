@@ -203,3 +203,35 @@ To confirm data was successfully saved, run the below command, you should see an
 Also see below as reference for creating rows in our table.
 
 ![](Images/sql.png)
+
+
+Now we create a PHP script that will connect to our MySQL server and query for our content. First we create a file in our web root directory using the below command
+
+`$ nano /var/www/projectLEMP/todo_list.php`
+
+Then we copy the below content into our script.
+
+<?php
+$user = "example_user";
+$password = "PassWord.1";
+$database = "example_database";
+$table = "todo_list";
+
+try {
+  $db = new PDO("mysql:host=localhost;dbname=$database", $user, $password);
+  echo "<h2>TODO</h2><ol>";
+  foreach($db->query("SELECT content FROM $table") as $row) {
+    echo "<li>" . $row['content'] . "</li>";
+  }
+  echo "</ol>";
+} catch (PDOException $e) {
+    print "Error!: " . $e->getMessage() . "<br/>";
+    die();
+}
+
+Save and exit.
+
+We then refresh our *URL* adding `/todo_list.php` to our url and we should get the below.
+
+![](Images/todo_list.png)
+
