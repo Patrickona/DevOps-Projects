@@ -11,3 +11,9 @@ This launches us into our instance as show in below screenshot
 ![Screenshot below of our instance](Images/EC2_instance.png)
 
 Then we open our terminal, enter into the directory we have our **.PEM** file saved and **ssh** into our virtual server
+
+`ssh -i <private-key.pem> ubuntu@<EC2-Public-IP-address>`
+
+![Below screenshot for reference](Images/Ubuntu_VC.png)
+
+`$ sudo apt install apache2`
