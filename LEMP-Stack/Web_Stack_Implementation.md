@@ -65,4 +65,46 @@ Log into mysql server with new password using the below command.
 
 ![Below reference](Images/mysql_test.png)
 
- 
+ ### Installing PHP ###
+
+Run the below command to install PHP. This will help process code and generate dynamic content for the web server.
+
+ `$ sudo apt install php-fpm php-mysql`
+
+### Configuring Nginx to use PHP Processor ###
+
+Create a root web directory for our domain with the below command
+
+ `$ sudo mkdir /var/www/projectLEMP`
+
+ Next we use the below command to assign ownership of the directory using the $USER environment variable to reference our system
+
+ `$ sudo chown -R $USER:$USER /var/www/projectLEMP`
+
+Open a new configuration file in Nginx **sites-available** using our preferred-line editor. We use the below command
+
+`$ sudo nano /etc/nginx/sites-available/projectLEMP`
+
+`#/etc/nginx/sites-available/projectLEMP
+
+server {
+    listen 80;
+    server_name projectLEMP www.projectLEMP;
+    root /var/www/projectLEMP;
+
+    index index.html index.htm index.php;
+
+    location / {
+        try_files $uri $uri/ =404;
+    }
+
+    location ~ \.php$ {
+        include snippets/fastcgi-php.conf;
+        fastcgi_pass unix:/var/run/php/php8.1-fpm.sock;
+     }
+
+    location ~ /\.ht {
+        deny all;
+    }
+
+}`
