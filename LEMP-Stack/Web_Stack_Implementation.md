@@ -35,6 +35,34 @@ Run the below command to install nginx in our remote server
 
  ### Installing MySql Server ###
 
- 
+ In our terminal, we run the below command to install **mysql server**
+
+`$ sudo apt install mysql-server`
+
+when prompted, confirm installation by typing `Y` and the `Enter`
+
+![Below screenshot for reference](Images/mysql_install.png)
+
+After installation, log into the server using the command
+
+`$ sudo mysql`
+
+This will connect to the MYSQL server as the administrative database user **root** which is inferred by the use of sudo. The below output will be seen.
+
+To set password as `"PassWord.1"` for the **root** user, we run the below command
+
+`ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'PassWord.1'`
+
+Then we "exit" mysql and run the below command to start the interactive script
+
+`$ sudo mysql_secure_installation`
+
+![Below screenshot for reference](Images/My_secure.png)
+
+Log into mysql server with new password using the below command.
+
+`$ sudo mysql -p`
+
+![Below reference](Images/sql_test.png)
 
  
