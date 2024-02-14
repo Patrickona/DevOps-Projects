@@ -219,4 +219,4 @@ We then refresh our *URL* adding `/todo_list.php` to our url and we should get t
 
 ![](Images/todo_list.png)
 
-## We have successfully deployed a LAMP STACK website in the cloud ## 
+## We have successfully deployed a LEMP STACK website in the cloud ## 
