@@ -16,4 +16,25 @@ Then we open our terminal, enter into the directory we have our **.PEM** file sa
 
 ![Below screenshot for reference](Images/Ubuntu_VC.png)
 
-`$ sudo apt install apache2`
+### Installing Nginx Web Server ###
+
+Run the below command to install nginx in our remote server
+
+`$ sudo apt update`
+`$ sudo apt install nginx`
+
+ Then we run the below command to confirm it has been properly installed. You should see a green notification saying **Actively running** to signify it is properly installed.
+
+`$ sudo systemctl status nginx`
+
+ ![Below screenshot for reference](Images/nginx_install.png)
+
+ Copy our EC2 instance public IP address and paste on a web browser to test our Nginx server.
+
+ ![Below screenshot for reference](Images/Web_browser.png)
+
+ ### Installing MySql Server ###
+
+ 
+
+ 
