@@ -108,3 +108,14 @@ Open a new configuration file in Nginx **sites-available** using our preferred-l
     }
 
 }`
+
+Below are what each of these directives do: 
+- listen: Defines what port Nginx will listen on. In this case, it will listen on port `80` default for HTTP
+- root: Defines the document root where files served by this website will be saved
+- index: Defines in which order Nginx will prioritize index files for this website.
+- server_name: Defines which domain names and/or IP addresse this server block should respond for.
+- location /: The first location block includes a `try_files` dr=irective which checks for the existence of files or directories matching a URI request. If Nginx cannot find the a appropriate resource, it will return a 404 error.
+- location ~ \.php$: This location block handles the actual PHP processing by pointing Nginx to the fastcgi-php.conf configuration file and the `php7.4-fpm.sock file`, which declares what socket is associated with `php-fpm`.
+- location ~/\.ht: The last location block deals with `.htaccess` files which Nginx does not process. By adding the deny all directive, if any `.htaccess` files happen to find their way into the document root, they will not beserved to visitors.
+
+  When you are done editing, save and close the file. You can do so by typing `Ctrl + X` and then `Y` and `ENTER`
